@@ -1,0 +1,196 @@
+/* 
+FCC  Instructions
+
+Video: https://www.youtube.com/watch?v=y8Yv4pnO7qc
+
+When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).*/
+
+:root {
+  --primary-color: #eee;
+  --accent-color: #ddd;
+  --buttonstatic-color: #f1c40e;
+  --buttonhover-color: #ffa502;
+  --FAicon-color: #ff8c00;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+/*  Media Query */
+
+@media (max-width: 500px) {
+  i.fas {
+    display: none;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    margin: 10%;
+  }
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+/*  NavBar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 200px;
+}
+#header-img {
+  width: 300;
+  height: 34px;
+  margin-top: 35px;
+  justify-content: flex-start;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  font-size: 0.9rem;
+  padding: 15px 20px;
+  margin: 5px;
+  display: inline;
+}
+
+/*  Main Page */
+
+h1,
+h4 {
+  text-align: center;
+}
+
+h3 {
+  padding: 20px;
+  background-color: #dddddd;
+  text-align: center;
+}
+
+p {
+  padding: 20px;
+  line-height: 1.2rem;
+  text-align: center;
+}
+
+#nav-bar {
+  padding: 20px;
+}
+
+/*  Form */
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  padding: 5px 30px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+form #submit {
+  background-color: #f1c40e;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*  Features */
+
+.features {
+  padding: 20px;
+  display: flex;
+}
+
+.feature-list {
+  flex-direction: row;
+  justify-content: center;
+}
+
+i.fas {
+  color: #ff8c00;
+  font-size: 4rem;
+  padding: 15px;
+  align-items: flex-start;
+}
+
+.features h2 {
+  justify-content: right;
+}
+.features p {
+  text-align: justify;
+}
+/* How it works - Video  */
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+
+/*  Product Section */
+
+.products {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-box {
+  margin: 10px;
+  border: #000 solid 1px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+.products h3 {
+  text-transform: uppercase;
+}
+/*  Footer  */
+
+footer {
+  background-color: #ddd;
+  text-align: right;
+}
+
+footer ul {
+  display: flex;
+  align-items: flex-end;
+}
