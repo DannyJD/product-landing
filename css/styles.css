@@ -1,10 +1,9 @@
-/* 
-FCC  Instructions
+/*  Icons
+        <i class="fas fa-fire"></i>
+        <i class="fas fa-truck"></i>
+        <i class="fas fa-battery-full"></i>
 
-Video: https://www.youtube.com/watch?v=y8Yv4pnO7qc
-
-When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).*/
-
+        */
 :root {
   --primary-color: #eee;
   --accent-color: #ddd;
@@ -39,25 +38,27 @@ html {
   }
 }
 
+/*  NavBar */
+
 body {
   background-color: #eeeeee;
 }
 
-/*  NavBar */
-
-header {
+.nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  align-items: flex-end;
   position: fixed;
+  top: 0;
+  padding: 10px;
   width: 100%;
-  margin-bottom: 200px;
+  background-color: var(--primary-color);
 }
+
 #header-img {
   width: 300;
   height: 34px;
-  margin-top: 35px;
-  justify-content: flex-start;
+  margin-right: auto;
 }
 
 a {
@@ -70,22 +71,20 @@ a:hover {
   text-decoration: none;
   color: #000;
 }
-nav ul {
+.nav-link {
+  text-decoration: none;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
-
-nav ul li {
-  font-size: 0.9rem;
-  padding: 15px 20px;
-  margin: 5px;
-  display: inline;
+.nav-link li {
+  display: inline-block;
+  padding-left: 40px;
 }
 
 /*  Main Page */
+
+.title-container {
+  margin-top: 100px;
+}
 
 h1,
 h4 {
@@ -102,10 +101,6 @@ p {
   padding: 20px;
   line-height: 1.2rem;
   text-align: center;
-}
-
-#nav-bar {
-  padding: 20px;
 }
 
 /*  Form */
@@ -136,28 +131,41 @@ form #submit {
 /*  Features */
 
 .features {
-  padding: 20px;
+  margin: 0;
+}
+
+.card {
   display: flex;
 }
 
-.feature-list {
-  flex-direction: row;
+.icon {
+  color: #ff8c00;
+  font-size: 4rem;
+  padding: 10px;
+  align-items: center;
   justify-content: center;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 123px;
+  margin-left: 10px;
 }
 
 i.fas {
-  color: #ff8c00;
-  font-size: 4rem;
-  padding: 15px;
-  align-items: flex-start;
+  width: 100px;
 }
 
-.features h2 {
-  justify-content: right;
-}
-.features p {
+.desc h2,
+.desc p {
   text-align: justify;
+  padding: 0;
 }
+
 /* How it works - Video  */
 
 iframe {
@@ -190,7 +198,8 @@ footer {
   text-align: right;
 }
 
-footer ul {
-  display: flex;
-  align-items: flex-end;
+.footer-links li {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0px 20px;
 }

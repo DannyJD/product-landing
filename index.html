@@ -8,29 +8,26 @@
       src="https://kit.fontawesome.com/0053d48e1e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/css/styles.css">
     <title>FCC Product Page</title>
   </head>
   <body>
+          <!--  NavBar -->
     <header id="header">
-      <img
-        src="/images/original_trombones.png"
-        alt="original trombones logo showing a trombone"
-        id="header-img"
-      />
-      <!--  NavBar -->
+      <div class="nav-container">
+      <img class="logo" src="/images/original_trombones.png" alt="original trombones logo showing a trombone" id="header-img">
       <nav id="nav-bar">
-        <div class="nav-link">
-          <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#video">How It Works</a></li>
-            <li><a href="#products">Pricing</a></li>
+          <ul class="nav-link">
+            <li class="nav-links"><a href="#features">Features</a></li>
+            <li class="nav-links"><a href="#video">How It Works</a></li>
+            <li class="nav-links"><a href="#products">Pricing</a></li>
           </ul>
-        </div>
-      </nav>
+      </nav> 
+    </div>
     </header>
-    <main>
-      <section class="main">
+
+    <!-- Email -->
+    <section class="title-container">
         <h1>Handscrafted, home-made masterpieces</h1>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
           <label for="Email"></label>
@@ -42,38 +39,39 @@
           />
           <input type="submit" id="submit" value="Get Started" />
         </form>
-      </section>
+      </section> 
+
       <!-- Features  -->
-      <section class="features">
-        <i class="fas fa-fire"></i>
-        <div class="feature-list">
-          <h2>Premium Materials</h2>
-          <p>
-            Our trombones use the shiniest brass which is sourced locally. This
-            will increase the longevity of your purchase.
-          </p>
-        </div>
-        <i class="fas fa-truck"></i>
-        <div class="feature-list">
+      <div class="feature">
+      <section id="features">
+<div class="card">
+  <div class="icon">  <i class="fas fa-fire"></i> </div>
+  <div class="desc">
+    <h2>Premium Materials</h2>
+    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+  </div> </div> 
+<div class="card">
+  <div class="icon">          <i class="fas fa-truck"></i></div>
+  <div class="desc">
+    <h2>Fast Shipping</h2>
+    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+  </div> </div> 
+<div class="card">
+  <div class="icon">          <i class="fas fa-battery-full"></i> </div>
+  <div class="desc">
+    <h2>
+      Quality Assurance</h2>
+    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument..</p>
+  </div> </div> 
 
-          <h2>Fast Shipping</h2>
-          <p>
-            We make sure you recieve your trombone as soon as we have finished
-            making it. We also provide free returns if you are not satisfied.
-          </p>
-        </div>
-        <i class="fas fa-battery-full"></i>
-        <div class="feature-list">
 
-          <h2>Quality Assurance</h2>
-          <p>
-            For every purchase you make, we will ensure there are no damages or
-            faults and we will check and test the pitch of your instrument.
-          </p>
-        </div>
-      </section>
+
+
+
+    </section>
+  </div>
       <!-- Video -->
-      <section id="video">
+      <section class="video">
         <iframe id="video"
           width="560"
           height="315"
@@ -84,6 +82,7 @@
         ></iframe
         ></video>
       </section>
+
       <!-- Product Selection -->
       <section class="products">
         <div class="product-box">
@@ -110,9 +109,12 @@
   <!-- Footer -->
   <footer>
     <div class="footer-nav">
-      <h5>Privacy</h5>
-      <h5>Terms</h5>
-      <h5>Contact</h5>
+      <ul class="footer-links"> 
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Terms</a></li>
+<li><a href="#">Contact</a></li>
+
+    </ul>
     </div>
     <p>Copyright 2016, Original Trombones</p>
   </footer>
